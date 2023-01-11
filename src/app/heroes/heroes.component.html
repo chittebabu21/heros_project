@@ -1,0 +1,8 @@
+<div class="container">
+    <h2 class="text-center fs-5 fw-lighter">My Heros</h2>
+    <ul class="heroes d-flex justify-content-center flex-column align-items-center ps-0">
+        <li *ngFor="let hero of heroes">
+            <button type="button" class="btn btn-outline-info mt-2 d-flex justify-content-center" routerLink="/detail/{{ hero.id }}">{{ hero.name | uppercase }}</button>
+        </li>
+    </ul>
+</div>

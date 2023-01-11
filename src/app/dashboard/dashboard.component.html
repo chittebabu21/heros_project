@@ -1,0 +1,4 @@
+<h3 class="text-center">Top Heroes</h3>
+<div class="container heroes-menu d-flex justify-content-center align-items-center flex-column">
+    <button class="btn btn-outline-info mt-2 d-flex justify-content-center" *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}" type="button">{{ hero.name | uppercase }}</button>
+</div>

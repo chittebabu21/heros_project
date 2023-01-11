@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-center flex-column align-items-center bg-secondary pb-4 mt-4 rounded-3" *ngIf="hero">
+    <h4 class="text-light fw-light mt-4">{{ hero.name | uppercase }}</h4>
+    <div class="text-light fw-light">ID: {{ hero.id }}</div>
+    <div class="m-4">
+        <label class="text-light fw-light me-3" for="hero-name">Hero's name: </label>
+        <input class="rounded-3" id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <button class="btn btn-danger mt-4" type="button" (click)="back()">Back</button>
+</div>
